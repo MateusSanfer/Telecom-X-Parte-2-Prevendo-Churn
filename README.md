@@ -114,6 +114,39 @@ Com base nos fatores de risco identificados e no modelo de Regressão Logística
 
 ---
 
+## 🚀 Como Executar o Projeto
+
+Para executar este notebook e reproduzir a análise e modelagem preditiva de churn, siga os passos abaixo:
+
+### 1. Clone este repositório:
+   ```bash
+   git clone https://github.com/MateusSanfer/Telecom-X-Parte-2-Prevendo-Churn.git
+   cd telecom-X-parte-2-prevendo-churn
+   ```
+
+### 📦 2. Instalação das Bibliotecas
+
+Você precisará ter o Python instalado em seu ambiente. As bibliotecas utilizadas neste projeto podem ser instaladas via pip. Crie um arquivo chamado `requirements.txt` e adicione o seguinte conteúdo:
+```bash
+pip install -r requirements.txt
+ ```
+```bash
+import pandas as pd
+
+url_dados_tratados = 'https://raw.githubusercontent.com/MateusSanfer/Challenge-Telecom-X-One/refs/heads/main/dados_tratados.csv'
+
+try:
+  dados_tratados = pd.read_csv(url_dados_tratados)
+  print('Dados carregados com sucesso!')
+except Exception as e:
+  print(f'Erro ao carregar os dados: {e}')
+
+dados_tratados.head()
+ ```
+📓 Acesse o notebook completo no [Google Colab](https://colab.research.google.com/drive/SEU-LINK-AQUI).
+
+---
+
 ## 👨‍💻 Autor
 
 **Mateus Sanfer**
